@@ -1,3 +1,6 @@
+package shapes;
+import java.awt.Color;
+
 // Interface for objects that can be displayed
 public interface Displayable {
     // Method to display an element at given coordinates with a specific color

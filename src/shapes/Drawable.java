@@ -1,3 +1,6 @@
+package shapes;
+import java.awt.Color;
+
 // Interface for drawable shapes
 public interface Drawable {
     // Method to draw the shape using a Displayable

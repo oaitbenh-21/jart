@@ -1,3 +1,6 @@
+package shapes;
+import java.awt.Color;
+
 // Class representing a triangle
 public class Triangle implements Drawable {
     // Constructor
@@ -7,5 +10,7 @@ public class Triangle implements Drawable {
     public void draw(Displayable displayable) {}
 
     // Method to get the color of the triangle
-    public Color getColor() {}
+    public Color getColor() {
+        return new Color(1, 1, 1);
+    }
 }
