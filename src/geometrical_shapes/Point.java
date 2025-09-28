@@ -6,7 +6,7 @@ public class Point {
 
     private int x;
     private int y;
-    protected Color color;
+    private Color color;
 
     public Point(int x, int y) {
         this.x = x;
@@ -20,16 +20,8 @@ public class Point {
         this.color = color;
     }
 
-    public void setColor(int r, int g, int b) {
-        this.color = new Color(r, g, b);
-    }
-
-    public void setX(int x) {
-        this.x = x;
-    }
-
-    public void setY(int y) {
-        this.y = y;
+    public Color getColor() {
+        return this.color;
     }
 
     public int getX() {

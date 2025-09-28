@@ -7,12 +7,11 @@ import javax.imageio.ImageIO;
 import java.io.File;
 import java.io.IOException;
 
-// Class representing an image that implements Displayable
 public class Image implements Displayable {
     private BufferedImage bufferedImage;
 
-    protected int width;
-    protected int height;
+    private int width;
+    private int height;
 
     public Image(int width, int height) {
         this.width = width;
@@ -22,7 +21,7 @@ public class Image implements Displayable {
 
     public void save(String filename) {
         try {
-            String format = "png"; // default
+            String format = "png";
             if (filename.toLowerCase().endsWith(".jpg") || filename.toLowerCase().endsWith(".jpeg")) {
                 format = "jpg";
             }
@@ -34,7 +33,6 @@ public class Image implements Displayable {
         }
     }
 
-    // Method to display a pixel with color
     public void display(int x, int y, Color color) {
         Graphics g = bufferedImage.getGraphics();
         g.setColor(color);

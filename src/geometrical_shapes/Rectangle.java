@@ -32,7 +32,4 @@ public class Rectangle implements Drawable {
         return new Color(1, 1, 1);
     }
 
-    public void setColor(int r, int g, int b) {
-        this.color = new Color(r, g, b);
-    }
 }

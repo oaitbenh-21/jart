@@ -3,9 +3,9 @@ package geometrical_shapes;
 import java.awt.Color;
 
 public class Line implements Drawable {
-    protected Point x;
-    protected Point y;
-    protected Color color;
+    private Point x;
+    private Point y;
+    private Color color;
 
     public Line(Point x, Point y) {
         this.x = x;
@@ -35,7 +35,7 @@ public class Line implements Drawable {
 
     public Line random(int width, int height) {
         Line line = new Line(Point.Random(width, height), Point.Random(width, height));
-        line.color = Point.Random(width, height).color;
+        line.color = Point.Random(width, height).getColor();
         return line;
     }
 
