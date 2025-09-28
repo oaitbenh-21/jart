@@ -10,6 +10,7 @@ public class Line implements Drawable {
     public Line(Point x, Point y) {
         this.x = x;
         this.y = y;
+        this.color = Color.WHITE;
     }
 
     public void draw(Displayable displayable) {

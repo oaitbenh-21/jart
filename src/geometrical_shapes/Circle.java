@@ -10,6 +10,7 @@ public class Circle implements Drawable {
     public Circle(Point center, int radius) {
         this.radius = radius;
         this.center = center;
+        this.color = Color.RED;
     }
 
     public static Circle random(int width, int height) {
