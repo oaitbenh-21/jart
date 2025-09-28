@@ -41,7 +41,6 @@ public class Point {
     }
 
     public static Point Random(int maxX, int maxY) {
-        System.out.println(Math.random() * maxX);
         return new Point(
                 (int) (Math.random() * maxX),
                 (int) (Math.random() * maxY),

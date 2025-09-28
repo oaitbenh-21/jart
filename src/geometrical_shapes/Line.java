@@ -33,6 +33,12 @@ public class Line implements Drawable {
         }
     }
 
+    public Line random(int width, int height) {
+        Line line = new Line(Point.Random(width, height), Point.Random(width, height));
+        line.color = Point.Random(width, height).color;
+        return line;
+    }
+
     public Color getColor() {
         return this.color;
     }

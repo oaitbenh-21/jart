@@ -37,8 +37,16 @@ public class Image implements Displayable {
     // Method to display a pixel with color
     public void display(int x, int y, Color color) {
         Graphics g = bufferedImage.getGraphics();
-        g.setColor(Color.WHITE);
+        g.setColor(color);
         g.fillOval(x - 1, y - 1, 2, 2);
         g.dispose();
+    }
+
+    public int getWidth() {
+        return this.width;
+    }
+
+    public int getHeight() {
+        return this.height;
     }
 }
