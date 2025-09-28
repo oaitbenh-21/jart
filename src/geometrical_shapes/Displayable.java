@@ -1,4 +1,5 @@
-package shapes;
+package geometrical_shapes;
+
 import java.awt.Color;
 
 // Interface for objects that can be displayed
